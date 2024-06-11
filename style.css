@@ -14,12 +14,74 @@ header {
 h1 {
   text-align: center;
   color: #fff;
-  text-transform: capitalize;
+  font-family: "Carter One", system-ui;
+  text-transform: uppercase;
   font-size: 1.8rem;
   letter-spacing: 15px;
-  text-shadow:  0 1px 0 #efefef, 
-                0 2px 0 #efefef, 
-                0 3px 0 #efefef,
-                0 4px 0 #efefef, 
-                0 30px 5px rgba(0,0,0,0.1);
+  text-shadow: 0 1px 0 #efefef, 0 2px 0 #efefef, 0 3px 0 #efefef,
+    0 4px 0 #efefef, 0 30px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7bed9f;
+}
+
+.gameArea {
+  width: 50%;
+  height: 400px;
+  padding: 20px 0;
+  background-color: #2ed573;
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+input {
+  width: 40%;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: #dff9fb;
+  color: #000;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+button {
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: #2f3542;
+  margin: 10px;
+  color: #eb4d4b;
+}
+
+button.btn {
+  font-weight: 600;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  text-transform: uppercase;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+
+button.btn:hover,
+button.btn:focus,
+button.btn:active {
+  letter-spacing: 0.125rem;
+  word-spacing: 0.2rem;
 }
