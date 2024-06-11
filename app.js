@@ -12,13 +12,16 @@ let words = [
   "php",
   "java",
   "c#",
+  "postgresql",
   "html",
   "css",
   "reactjs",
   "angular",
   "swift",
   "android",
+  "typescript",
   "sql",
+  "mocha"
 ];
 
 const createNewWords = () => {

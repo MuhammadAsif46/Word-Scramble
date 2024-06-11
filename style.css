@@ -8,7 +8,7 @@
 header {
   width: 100%;
   line-height: 15vh;
-  background-color: #20bf6b;
+  background-color: #0096c7;
 }
 
 h1 {
@@ -27,15 +27,17 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7bed9f;
+  background-color: #48cae4;
 }
 
 .gameArea {
   width: 50%;
   height: 400px;
   padding: 20px 0;
-  background-color: #2ed573;
+  background-color: #0096c7;
   font-family: "Source Sans Pro", sans-serif;
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,6 +47,7 @@ section {
 h3 {
   text-align: center;
   font-size: 1.5rem;
+  color: #fff;
 }
 
 input {
