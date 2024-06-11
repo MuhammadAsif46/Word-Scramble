@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  line-height: 15vh;
+  background-color: #20bf6b;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  letter-spacing: 15px;
+  text-shadow:  0 1px 0 #efefef, 
+                0 2px 0 #efefef, 
+                0 3px 0 #efefef,
+                0 4px 0 #efefef, 
+                0 30px 5px rgba(0,0,0,0.1);
+}
