@@ -32,7 +32,7 @@ const scrambleWords = (arr) => {
   for (let i = arr.length - 1; i > 0; i--) {
     let temp = arr[i];
     // console.log(temp);
-    let j = Math.floor(Math.random() * (i + 1))
+    let j = Math.floor(Math.random() * (i + 1));
     arr[i] = arr[j];
     arr[j] = temp;
   }
@@ -45,7 +45,23 @@ btn.addEventListener("click", () => {
     btn.innerHTML = "Guess";
     guess.classList.toggle("hidden");
     newWords = createNewWords();
-    randomWord = scrambleWords(newWords.split(""));
-    console.log(randomWord);
+    randomWord = scrambleWords(newWords.split("")).join("");
+    // console.log(randomWord.join(""));
+    msg.innerHTML = `Guess the word: ${randomWord}`;
+  } else {
+    let tempWord = guess.value;
+    if (tempWord === newWords) {
+        // console.log("correct word");
+        play = false;
+        msg.innerHTML = `Awesome it's Correct. it is ${newWords}`
+        btn.innerHTML = "Start Again"
+        guess.classList.toggle("hidden");
+        guess.value = "";
+
+    }else{
+        // console.log("wrong word");
+        msg.innerHTML = `Sorry it's Incorrect. Plz try again ${randomWord}`
+
+    }
   }
 });
