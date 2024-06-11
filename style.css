@@ -85,3 +85,7 @@ button.btn:active {
   letter-spacing: 0.125rem;
   word-spacing: 0.2rem;
 }
+
+.hidden{
+    display: none ;
+}
